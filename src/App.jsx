@@ -1,6 +1,6 @@
 export default function App() {
   return (
-    <div className="bg-pink-300 min-h-screen flex justify-center items-center">
+    <div className="bg-deepYellow min-h-screen flex justify-center items-center">
       <div className="bg-white w-[390px] h-[894px] flex flex-col justify-start items-center">
         <div className="border-[1px] mt-[44px] px-[6px] py-[3px]  rounded-[10px] border-[#2D2D32]">
           나의 닉네임
@@ -74,7 +74,7 @@ export default function App() {
           </div>
         </div>
         <div
-          className="w-[340px] h-[140px] flex justify-start items-start p-[10px] font-bold border-[2px] border-[#2D2D32] mt-4 rounded-lg"
+          className="font-agothic16 w-[340px] h-[140px] flex justify-start items-start p-[10px] font-bold border-[2px] border-[#2D2D32] mt-4 rounded-lg"
           style={{ fontSize: "20px" }}
         >
           NFT 마켓
