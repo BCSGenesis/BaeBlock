@@ -3,13 +3,9 @@
   src: url("../public/fonts/agothic16.TTF") format("truetype"); /* 폰트 파일 경로와 형식 지정 */
   /* 추가적인 폰트 스타일 지정 가능 */
 }
+
 @font-face {
   font-family: "agothic10";
   src: url("../public/fonts/agothic10.TTF") format("truetype"); /* 폰트 파일 경로와 형식 지정 */
   /* 추가적인 폰트 스타일 지정 가능 */
-}
-
-body {
-  font-family: "agothic16", sans-serif; /* 적용할 폰트 선택 */
-  font-family: "agothic10", sans-serif; /* 적용할 폰트 선택 */
 }
