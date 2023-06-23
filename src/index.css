@@ -10,4 +10,10 @@
   .menu-style {
     @apply border-[1px] rounded-[10px];
   }
+  .shadow-custom {
+    box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+  .nftMarket-style {
+    background-image: linear-gradient(to top, #ffc805, #aa3fff);
+  }
 }

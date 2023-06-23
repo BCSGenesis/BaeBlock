@@ -1,3 +1,5 @@
+import nftShop from "../images/nftShop.png";
+
 export default function MainRider() {
   return (
     <div className="bg-deepYellow min-h-screen flex justify-center items-center">
@@ -30,14 +32,14 @@ export default function MainRider() {
               </div>
             </div>
             <div
-              className="font-agothic13 w-[70px] h-[70px] bg-mint text-[#FAFAF2] flex justify-center items-center rounded-full border-[1px] shadow-md "
+              className="font-agothic13 w-[70px] h-[70px] bg-mint text-[#FAFAF2] flex justify-center items-center rounded-full border-[1px] shadow- "
               style={{ fontSize: "20px" }}
             >
               배달중
             </div>
           </div>
           <div
-            className="font-agothic13 bg-light_gray w-[340px] flex justify-center items-center px-[10px] py-[25px] font-bold border-[2px] border-[#2D2D32] mt-4 rounded-lg"
+            className="font-agothic13 bg-lightGray w-[340px] flex justify-center items-center px-[10px] py-[25px] font-bold border-[2px] border-[#2D2D32] mt-4 rounded-lg"
             style={{ fontSize: "20px" }}
           >
             새로운 배달을 시작해요!
@@ -62,10 +64,15 @@ export default function MainRider() {
             </div>
           </div>
           <div
-            className="font-agothic13 w-[340px] h-[140px] flex justify-start items-start p-[10px] font-bold border-[2px] border-[#2D2D32] mt-4 rounded-lg"
+            className="relative nftMarket-style  w-[340px] h-[160px] flex justify-start items-start p-[10px] font-bold border-[2px] border-[#2D2D32] mt-4 rounded-lg"
             style={{ fontSize: "20px" }}
           >
             NFT 마켓
+            <img
+              className="w-[160px] absolute right-0"
+              src={nftShop}
+              alt="nftMarket"
+            />
           </div>
         </div>
       </div>
