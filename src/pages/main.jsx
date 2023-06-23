@@ -9,8 +9,8 @@ function Main() {
       <Link to="/mainStore">
         <button>mainStore</button>
       </Link>
-      <Link to="/menuEdit">
-        <button>menuEdit</button>
+      <Link to="/storeViewCustomer">
+        <button>storeViewCustomer</button>
       </Link>
       <Link to="/menuStore">
         <button>menuStore</button>

@@ -4,7 +4,10 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 
 @layer components {
-  .btn-style {
-    @apply py-2 px-4 bg-white border-2 rounded-lg shadow-md  hover:text-white focus:outline-none;
+  .nft-style {
+    @apply bg-[#AA3FFF] rounded-full px-[6px] py-[1px] text-[#FAFAF2];
+  }
+  .menu-style {
+    @apply border-[1px] rounded-[10px];
   }
 }

@@ -3,6 +3,31 @@
   src: url("../public/fonts/agothic16.TTF") format("truetype"); /* 폰트 파일 경로와 형식 지정 */
   /* 추가적인 폰트 스타일 지정 가능 */
 }
+@font-face {
+  font-family: "agothic15";
+  src: url("../public/fonts/agothic15.TTF") format("truetype"); /* 폰트 파일 경로와 형식 지정 */
+  /* 추가적인 폰트 스타일 지정 가능 */
+}
+@font-face {
+  font-family: "agothic14";
+  src: url("../public/fonts/agothic14.TTF") format("truetype"); /* 폰트 파일 경로와 형식 지정 */
+  /* 추가적인 폰트 스타일 지정 가능 */
+}
+@font-face {
+  font-family: "agothic13";
+  src: url("../public/fonts/agothic13.TTF") format("truetype"); /* 폰트 파일 경로와 형식 지정 */
+  /* 추가적인 폰트 스타일 지정 가능 */
+}
+@font-face {
+  font-family: "agothic12";
+  src: url("../public/fonts/agothic12.TTF") format("truetype"); /* 폰트 파일 경로와 형식 지정 */
+  /* 추가적인 폰트 스타일 지정 가능 */
+}
+@font-face {
+  font-family: "agothic11";
+  src: url("../public/fonts/agothic11.TTF") format("truetype"); /* 폰트 파일 경로와 형식 지정 */
+  /* 추가적인 폰트 스타일 지정 가능 */
+}
 
 @font-face {
   font-family: "agothic10";
