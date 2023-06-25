@@ -10,6 +10,7 @@ import rocket from "../images/rocket.png";
 import shop from "../images/shop.png";
 import user from "../images/user.png";
 import orange from "../images/orange.png";
+import cart from "../images/cart.png";
 
 export default function StoreViewCustomer() {
   return (
@@ -117,12 +118,23 @@ export default function StoreViewCustomer() {
             </div>
           </div>
         </div>
-        <div className=" sticky  bottom-0 mt-36 bg-white shadow-custom  b rounded-tl-[5px] rounded-tr-[5px] w-[390px] h-[60px] flex justify-evenly  items-center ">
-          <img className="w-[40px]" src={shop} alt="shop" />
-          <img className="w-[40px]" src={list} alt="list" />
-          <img className="w-[40px]" src={rocket} alt="rocket" />
-          <img className="w-[40px]" src={like} alt="like" />
-          <img className="w-[40px]" src={user} alt="user" />
+        <div className=" bottom-0 mt-36 relative">
+          <div
+            className="absolute -translate-y-16  right-2 font-agothic13 w-[70px] h-[70px] bg-purple text-[#FAFAF2] flex justify-center items-center rounded-full border-[1px] shadow-md "
+            style={{ fontSize: "20px" }}
+          >
+            <img className="w-[160px]" src={cart} alt="cart" />
+            <div className="w-8 h-8 absolute right-0 bottom-0 translate-x-2 translate-y-2 bg-purple rounded-full p-2 border-[1px] shadow-md flex justify-center items-center">
+              0
+            </div>
+          </div>
+          <div className="    bg-white shadow-custom   rounded-tl-[5px] rounded-tr-[5px] w-[390px] h-[60px] flex justify-evenly  items-center ">
+            <img className="w-[40px]" src={shop} alt="shop" />
+            <img className="w-[40px]" src={list} alt="list" />
+            <img className="w-[40px]" src={rocket} alt="rocket" />
+            <img className="w-[40px]" src={like} alt="like" />
+            <img className="w-[40px]" src={user} alt="user" />
+          </div>
         </div>
       </div>
     </div>
