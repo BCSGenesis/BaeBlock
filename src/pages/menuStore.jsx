@@ -28,7 +28,18 @@ export default function MenuStore() {
               className="flex justify-center font-agothic16 mt-2 "
               style={{ fontSize: "20px" }}
             >
-              매장명을 입력해주세요!
+              <input
+                style={{ fontSize: "16px" }}
+                className="w-146h-8 border-b-[2px] border-[#2D2D32]  px-2 rounded-tl-full rounded-bl-full"
+                type="text"
+                placeholder="매장명을 입력해주세요!"
+              />
+              <button
+                className="h-8 w-14  bg-deepYellow rounded-tr-full rounded-br-full flex justify-center items-center"
+                style={{ fontSize: "16px" }}
+              >
+                확인
+              </button>
             </div>
             <div className="flex justify-center items-center mt-2">
               <AiFillStar size={24} color="FFD84D" />
