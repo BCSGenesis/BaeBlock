@@ -1,6 +1,12 @@
+import NftTitle from "../components/nftTitle";
 import nftShop from "../images/nftShop.png";
 
 export default function MainStore() {
+  const nftTitle = [
+    { name: "멕시칸" },
+    { name: "리뷰 최다" },
+    { name: "친절한 사장님" },
+  ];
   return (
     <div className="bg-deepYellow min-h-screen flex justify-center items-center">
       <div className="bg-white w-[390px] overflow-y-auto h-[894px] ">
@@ -21,15 +27,14 @@ export default function MainStore() {
           </div>
           <div className="w-[340px] flex justify-between  items-center mt-8 gap-2">
             <div className=" flex justify-start items-center mt-8 gap-2">
-              <div className="nft-style" style={{ fontSize: "14px" }}>
-                멕시칸
-              </div>
-              <div className="nft-style" style={{ fontSize: "14px" }}>
-                리뷰 최다
-              </div>
-              <div className="nft-style" style={{ fontSize: "14px" }}>
-                친절한 사장님
-              </div>
+              {[...Array(parseInt(nftTitle.length))].map((v, i) => (
+                <NftTitle
+                  title={nftTitle[i].name}
+                  key={i}
+                  size={24}
+                  color="FFD84D"
+                />
+              ))}
             </div>
             <div
               className="w-[70px] h-[70px] bg-gray font-agothic16 text-[#FAFAF2] flex justify-center items-center rounded-full border-[1px] shadow-md "
