@@ -1,4 +1,4 @@
-import NftTitle from "../components/nftTitle";
+import NftTitle from "../badges/nftTitle";
 import nftShop from "../images/nftShop.png";
 
 export default function MainStore() {

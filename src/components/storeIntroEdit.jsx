@@ -1,6 +1,6 @@
 import { AiOutlineRight } from "react-icons/ai";
 import { AiFillStar } from "react-icons/ai";
-import NftTitle from "./nftTitle";
+import NftTitle from "../badges/nftTitle";
 
 const StoreIntroEdit = (props) => {
   return (
