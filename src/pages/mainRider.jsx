@@ -3,9 +3,9 @@ import NftTitle from "../badges/nftTitle";
 
 import NftMarket from "../components/nftMarket";
 
-import InDelivery from "../badges/inDelivery";
 import LongBox from "../components/longBox";
 import Box from "../components/box";
+import Badge from "../badges/badge";
 
 export default function MainRider() {
   const [nickName, setNickName] = useState("나의 닉네임"); //로그인에서 프롭스로 내려야할것같음
@@ -46,7 +46,7 @@ export default function MainRider() {
                 />
               ))}
             </div>
-            <InDelivery />
+            <Badge text1="배달중" text2="" color="mint" />
           </div>
           <LongBox text="새로운 배달을 시작해요!" />
 
