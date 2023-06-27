@@ -4,7 +4,7 @@ import NftTitle from "../badges/nftTitle";
 
 const StoreIntroEdit = (props) => {
   return (
-    <div className="  bg-white w-[320px] h-[140px]  flex-cols justify-center items-center p-[10px] border-[2px] border-[#2D2D32] mt-2 rounded-lg shadow-md">
+    <div className="  bg-white w-[320px] h-[140px]  flex-cols justify-center items-center p-[10px]  mt-2 shadow-md box-style">
       <div
         className="flex justify-center font-agothic16 mt-2 "
         style={{ fontSize: "20px" }}
@@ -12,14 +12,14 @@ const StoreIntroEdit = (props) => {
         {props.storeName ? (
           <input
             style={{ fontSize: "16px" }}
-            className="w-146h-8 border-b-[2px] border-[#2D2D32]  px-2 rounded-tl-full rounded-bl-full"
+            className="w-46 h-8 border-b-[2px] border-[#2D2D32]  px-2 rounded-tl-full rounded-bl-full"
             type="text"
             placeholder={props.storeName}
           />
         ) : (
           <input
             style={{ fontSize: "16px" }}
-            className="w-146h-8 border-b-[2px] border-[#2D2D32]  px-2 rounded-tl-full rounded-bl-full"
+            className="w-46 h-8 border-b-[2px] border-[#2D2D32]  px-2 rounded-tl-full rounded-bl-full"
             type="text"
             placeholder="매장명을 입력해주세요!"
           />

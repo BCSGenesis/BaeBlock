@@ -2,7 +2,7 @@ import { BsPencil } from "react-icons/bs";
 
 const MenuList = (props) => {
   return (
-    <div className="font-agothic13 bg-white w-[350px] flex justify-between  items-center px-[10px] py-[15px] border-[2px] border-[#2D2D32] mt-4 rounded-lg">
+    <div className="font-agothic13 bg-white w-[350px] flex justify-between  items-center px-[10px] py-[15px]  mt-4 box-style">
       <div style={{ fontSize: "20px" }}>
         <div className="flex gap-2 items-center">
           <div>{props.menuName}</div>

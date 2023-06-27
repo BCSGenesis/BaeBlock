@@ -1,7 +1,7 @@
 const Box = (props) => {
   return (
     <div
-      className={`font-agothic13 w-[160px] h-[160px] bg-${props.color} p-2 mt-4 font-bold border-2 border-[#2D2D32] rounded-[10px]`}
+      className={`font-agothic13 w-[160px] h-[160px] ${props.color} p-2 mt-4 font-bold box-style`}
       style={{ fontSize: "20px" }}
     >
       {props.text1}

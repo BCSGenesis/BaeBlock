@@ -3,7 +3,7 @@ import nftShop from "../images/nftShop.png";
 const NftMarket = () => {
   return (
     <div
-      className="relative nftMarket-style  w-[340px] h-[160px] flex justify-start items-start p-[10px] font-bold border-[2px] border-[#2D2D32] mt-4 rounded-lg"
+      className="relative nftMarket-style  w-[340px] h-[160px] flex justify-start items-start p-[10px] font-bold  mt-4 box-style"
       style={{ fontSize: "20px" }}
     >
       NFT 마켓

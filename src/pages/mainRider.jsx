@@ -46,11 +46,11 @@ export default function MainRider() {
         </div>
         <Badge text1="배달중" text2="" color="bg-mint" />
       </div>
-      <LongBox text="새로운 배달을 시작해요!" />
+      <LongBox text="새로운 배달을 시작해요!" color="bg-lightGray" />
 
       <div className="w-[340px] flex justify-between items-center">
-        <Box text1="오늘의" text2="수익" color="white" />
-        <Box text1="나의" text2="프로필" color="deepYellow" />
+        <Box text1="오늘의" text2="수익" color="bg-white" />
+        <Box text1="나의" text2="프로필" color="bg-deepYellow" />
       </div>
       <NftMarket />
     </div>

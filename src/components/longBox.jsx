@@ -1,7 +1,7 @@
 const LongBox = (props) => {
   return (
     <div
-      className="font-agothic13 bg-lightGray w-[340px] flex justify-center items-center px-[10px] py-[25px] font-bold border-[2px] border-[#2D2D32] mt-4 rounded-lg"
+      className={`font-agothic13 ${props.color} w-[340px] flex justify-center items-center px-[10px] py-[25px] font-bold  mt-4 box-style`}
       style={{ fontSize: "20px" }}
     >
       {props.text}

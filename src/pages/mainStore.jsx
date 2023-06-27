@@ -43,12 +43,12 @@ export default function MainStore() {
         </div>
         <Badge text1="영업" text2="안함" color="bg-gray" />
       </div>
-      <LongBox text="새로운 주문이 들어왔어요!" />
-      <LongBox text="현재 수락한 주문 리스트" />
+      <LongBox text="새로운 주문이 들어왔어요!" color="bg-lightGray" />
+      <LongBox text="현재 수락한 주문 리스트" color="bg-lightGray" />
 
       <div className="w-[340px] flex justify-between items-center">
-        <Box text1="매출" text2="보기" color="white" />
-        <Box text1="메뉴" text2="수정" color="deepYellow" />
+        <Box text1="매출" text2="보기" color="bg-white" />
+        <Box text1="메뉴" text2="수정" color="bg-deepYellow" />
       </div>
 
       <NftMarket />

@@ -7,13 +7,18 @@
   .nft-style {
     @apply bg-[#AA3FFF] rounded-full px-[6px] py-[1px] text-[#FAFAF2];
   }
-  .menu-style {
+  /* .menu-style {
     @apply border-[1px] rounded-[10px];
-  }
-  .shadow-custom {
+  } */
+  .bar_shadow {
     box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.2);
+    /* 수평 수직 블러 확장 */
   }
   .nftMarket-style {
     background-image: linear-gradient(to top, #ffc805, #aa3fff);
+  }
+
+  .box-style {
+    @apply rounded-lg border-[2px] border-[#2D2D32];
   }
 }
