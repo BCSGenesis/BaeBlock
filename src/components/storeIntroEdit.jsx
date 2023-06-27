@@ -9,12 +9,21 @@ const StoreIntroEdit = (props) => {
         className="flex justify-center font-agothic16 mt-2 "
         style={{ fontSize: "20px" }}
       >
-        <input
-          style={{ fontSize: "16px" }}
-          className="w-146h-8 border-b-[2px] border-[#2D2D32]  px-2 rounded-tl-full rounded-bl-full"
-          type="text"
-          placeholder="매장명을 입력해주세요!"
-        />
+        {props.storeName ? (
+          <input
+            style={{ fontSize: "16px" }}
+            className="w-146h-8 border-b-[2px] border-[#2D2D32]  px-2 rounded-tl-full rounded-bl-full"
+            type="text"
+            placeholder={props.storeName}
+          />
+        ) : (
+          <input
+            style={{ fontSize: "16px" }}
+            className="w-146h-8 border-b-[2px] border-[#2D2D32]  px-2 rounded-tl-full rounded-bl-full"
+            type="text"
+            placeholder="매장명을 입력해주세요!"
+          />
+        )}
         <button
           className="h-8 w-14  bg-deepYellow rounded-tr-full rounded-br-full flex justify-center items-center"
           style={{ fontSize: "16px" }}

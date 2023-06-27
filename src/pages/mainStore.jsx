@@ -13,7 +13,7 @@ export default function MainStore() {
     { name: "멕시칸" },
     { name: "리뷰 최다" },
     { name: "친절한 사장님" },
-  ];
+  ]; //로그인시 프롭스로 내려줘야함??
   return (
     <div className="bg-deepYellow min-h-screen flex justify-center items-center">
       <div className="bg-white w-[390px] overflow-y-auto h-[894px] ">

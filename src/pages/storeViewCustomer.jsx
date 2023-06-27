@@ -13,21 +13,23 @@ export default function StoreViewCustomer() {
   const [deliveryFee, setDeliveryFee] = useState(1000);
   const [cartCount, setCartCount] = useState(0); //로그인시 프롭스로 내려줘야함??
 
-  const nftTitle = [{ name: "qwe" }, { name: "Asd" }];
+  const nftTitle = [{ name: "qwe" }, { name: "Asd" }]; //로그인시 프롭스로 내려줘야함??
   const menuList = [
     {
       menuName: "사과",
       menuFrom: "국내산",
       menuPrice: "12000",
       menuImage: "../images/orange.png",
+      ownerRecommend: true,
     },
     {
       menuName: "복숭이",
       menuFrom: "캐나다산",
       menuPrice: "17000",
       menuImage: "../images/orange.png",
+      ownerRecommend: false,
     },
-  ];
+  ]; //로그인시 프롭스로 내려줘야함??
   return (
     <div className="bg-deepYellow min-h-screen flex justify-center items-center">
       <div className="bg-white w-[390px] overflow-y-auto h-[894px] relative">
@@ -66,6 +68,7 @@ export default function StoreViewCustomer() {
                 menuFrom={menuList[i].menuFrom}
                 menuPrice={menuList[i].menuPrice}
                 menuImage={menuList[i].menuImage}
+                ownerRecommend={menuList[i].ownerRecommend}
               />
             ))}
           </div>

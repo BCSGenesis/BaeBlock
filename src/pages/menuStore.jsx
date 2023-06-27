@@ -6,9 +6,27 @@ import food from "../images/food.png";
 
 import MenuList from "../components/menuList";
 import StoreIntroEdit from "../components/storeIntroEdit";
+import { useState } from "react";
 
 export default function MenuStore() {
-  const nftTitle = [{ name: "qwe" }, { name: "Asd" }];
+  const [storeName, setStoreName] = useState("매장명"); //로그인시 프롭스로 내려줘야함??
+  const nftTitle = [{ name: "qwe" }, { name: "Asd" }]; //로그인시 프롭스로 내려줘야함??
+  const menuList = [
+    {
+      menuName: "사과",
+      menuFrom: "국내산",
+      menuPrice: "12000",
+      menuImage: "../images/orange.png",
+      ownerRecommend: true,
+    },
+    {
+      menuName: "복숭이",
+      menuFrom: "캐나다산",
+      menuPrice: "17000",
+      menuImage: "../images/orange.png",
+      ownerRecommend: false,
+    },
+  ]; //로그인시 프롭스로 내려줘야함??
   return (
     <div className="bg-deepYellow min-h-screen flex justify-center items-center">
       <div className="bg-white w-[390px] overflow-y-auto h-[894px] relative">
@@ -24,12 +42,25 @@ export default function MenuStore() {
           </div>
 
           <div className="absolute top-[200px]">
-            <StoreIntroEdit starCount="3" nftTitle={nftTitle} />
+            <StoreIntroEdit
+              starCount="3"
+              nftTitle={nftTitle}
+              storeName={storeName}
+            />
           </div>
 
           <div className="mt-[130px]" style={{ fontSize: "20px" }}>
             <div className="font-agothic16">메뉴</div>
-            <MenuList menuName="사과" menuFrom="한국" menuPrice="15000" />
+            {menuList.map((v, i) => (
+              <MenuList
+                key={i}
+                menuName={menuList[i].menuName}
+                menuFrom={menuList[i].menuFrom}
+                menuPrice={menuList[i].menuPrice}
+                menuImage={menuList[i].menuImage}
+                ownerRecommend={menuList[i].ownerRecommend}
+              />
+            ))}
 
             <div
               className="sticky  bottom-4 bg-white mb-4 font-agothic16 w-[350px]  flex justify-center items-center py-[20px] border-[2px] border-[#2D2D32] mt-4 rounded-lg"

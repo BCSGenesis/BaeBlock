@@ -6,12 +6,16 @@ const MenuList = (props) => {
       <div style={{ fontSize: "20px" }}>
         <div className="flex gap-2 items-center">
           <div>{props.menuName}</div>
-          <div
-            className="bg-deepYellow rounded-full px-[6px] py-[1px] text-white flex justify-center items-center"
-            style={{ fontSize: "16px" }}
-          >
-            사장님 추천
-          </div>
+          {props.ownerRecommend ? (
+            <div
+              className="bg-deepYellow rounded-full px-[6px] py-[1px] text-white flex justify-center items-center"
+              style={{ fontSize: "16px" }}
+            >
+              사장님 추천
+            </div>
+          ) : (
+            <div></div>
+          )}
         </div>
         <div>{props.menuFrom}</div>
         <div>{props.menuPrice}원</div>
