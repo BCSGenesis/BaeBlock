@@ -52,6 +52,7 @@ export default function MainStore() {
             <Box text1="매출" text2="보기" color="white" />
             <Box text1="메뉴" text2="수정" color="deepYellow" />
           </div>
+
           <NftMarket />
         </div>
       </div>

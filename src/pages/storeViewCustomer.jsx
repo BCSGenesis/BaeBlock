@@ -7,9 +7,27 @@ import MenuList from "../components/menuList";
 import CartIcon from "../components/cartIcon";
 import BottomBar from "../components/bottomBar";
 import StoreIntro from "../components/storeIntro";
+import { useState } from "react";
 
 export default function StoreViewCustomer() {
+  const [deliveryFee, setDeliveryFee] = useState(1000);
+  const [cartCount, setCartCount] = useState(0); //로그인시 프롭스로 내려줘야함??
+
   const nftTitle = [{ name: "qwe" }, { name: "Asd" }];
+  const menuList = [
+    {
+      menuName: "사과",
+      menuFrom: "국내산",
+      menuPrice: "12000",
+      menuImage: "../images/orange.png",
+    },
+    {
+      menuName: "복숭이",
+      menuFrom: "캐나다산",
+      menuPrice: "17000",
+      menuImage: "../images/orange.png",
+    },
+  ];
   return (
     <div className="bg-deepYellow min-h-screen flex justify-center items-center">
       <div className="bg-white w-[390px] overflow-y-auto h-[894px] relative">
@@ -29,7 +47,7 @@ export default function StoreViewCustomer() {
               className="flex justify-center items-center  bg-white w-[120px] rounded-full px-[6px] py-[1px] border-[1px] border-black font-agothic16"
               style={{ fontSize: "14px" }}
             >
-              배달료 1,350원!
+              배달료 {deliveryFee}원!
             </div>
 
             <StoreIntro
@@ -41,13 +59,19 @@ export default function StoreViewCustomer() {
 
           <div className="mt-[150px]" style={{ fontSize: "20px" }}>
             <div className="font-agothic16">메뉴</div>
-
-            <MenuList menuName="사과" menuFrom="한국" menuPrice="15000" />
-            <MenuList menuName="복숭아" menuFrom="한국" menuPrice="12000" />
+            {menuList.map((v, i) => (
+              <MenuList
+                key={i}
+                menuName={menuList[i].menuName}
+                menuFrom={menuList[i].menuFrom}
+                menuPrice={menuList[i].menuPrice}
+                menuImage={menuList[i].menuImage}
+              />
+            ))}
           </div>
         </div>
         <div className="sticky bottom-0  mt-[250px]">
-          <CartIcon cartMenuCount="2" />
+          <CartIcon cartMenuCount={cartCount} />
           <BottomBar />
         </div>
       </div>

@@ -1,5 +1,4 @@
 import { BsPencil } from "react-icons/bs";
-import orange from "../images/orange.png";
 
 const MenuList = (props) => {
   return (
@@ -18,7 +17,7 @@ const MenuList = (props) => {
         <div>{props.menuPrice}원</div>
       </div>
       <div className="relative bg-darkGray rounded-[10px]  w-[80px] h-[80px]">
-        <img src={orange} alt="" />
+        <img src={props.menuImage} alt="" />
         <div className="absolute bg-deepYellow border-[2px] border-white rounded-[5px] p-[2px] bottom-[-10px] right-[-10px]">
           <BsPencil size={20} color="black" />
         </div>
