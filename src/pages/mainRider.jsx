@@ -1,11 +1,11 @@
 import { useState } from "react";
 import NftTitle from "../badges/nftTitle";
 
-import MyProfile from "../components/myProfile";
-import TodayMoney from "../components/todayMoney";
 import NftMarket from "../components/nftMarket";
-import GoDelivery from "../components/goDelivery";
+
 import InDelivery from "../badges/inDelivery";
+import LongBox from "../components/longBox";
+import Box from "../components/box";
 
 export default function MainRider() {
   const [nickName, setNickName] = useState("나의 닉네임"); //로그인에서 프롭스로 내려야할것같음
@@ -48,11 +48,11 @@ export default function MainRider() {
             </div>
             <InDelivery />
           </div>
-          <GoDelivery />
+          <LongBox text="새로운 배달을 시작해요!" />
 
           <div className="w-[340px] flex justify-between items-center">
-            <TodayMoney />
-            <MyProfile />
+            <Box text1="오늘의" text2="수익" color="white" />
+            <Box text1="나의" text2="프로필" color="deepYellow" />
           </div>
           <NftMarket />
         </div>
