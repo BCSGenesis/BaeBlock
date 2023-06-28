@@ -1,8 +1,8 @@
-import like from "../images/like.png";
-import list from "../images/list.png";
-import rocket from "../images/rocket.png";
-import shop from "../images/shop.png";
-import user from "../images/user.png";
+import like from "../images/icon_like.png";
+import list from "../images/icon_list.png";
+import rocket from "../images/icon_rocket.png";
+import shop from "../images/icon_shop.png";
+import user from "../images/icon_user.png";
 
 const BottomBar = () => {
   return (

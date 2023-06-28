@@ -1,5 +1,7 @@
 import { IoIosArrowBack } from "react-icons/io";
 import { AiOutlineHome } from "react-icons/ai";
+import back from "../images/icon_ArrowBack.png";
+import home from "../images/icon_home_.png";
 
 import food from "../images/food.png";
 
@@ -34,18 +36,17 @@ export default function StoreViewCustomer() {
     <>
       <div className="flex flex-col justify-start items-center relative">
         <div className="min-w-full bg-pink-100 h-[250px] relative">
-          <button className="absolute top-[44px] left-[24px]">
-            <IoIosArrowBack size={24} />
-          </button>
-          <button className="absolute top-[44px] left-[342px]">
-            <AiOutlineHome size={24} />
-          </button>
+          <div className="absolute top-[44px] flex justify-between items-center min-w-full px-6">
+            <img src={back} alt="back" />
+            <img src={home} alt="home" />
+          </div>
+
           <img src={food} alt="food" />
         </div>
 
         <div className="flex-cols justify-start items-start absolute top-[200px]">
           <div
-            className="flex justify-center items-center  bg-white w-[120px] rounded-full px-[6px] py-[1px] border-[1px] border-black font-agothic16"
+            className="flex justify-center items-center  bg-white w-[120px] rounded-full px-[6px] py-[1px] border-[3px] border-red-400 font-agothic16"
             style={{ fontSize: "14px" }}
           >
             배달료 {deliveryFee}원!

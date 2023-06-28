@@ -61,7 +61,7 @@ export default function MenuStore() {
         ))}
 
         <div
-          className="sticky  bottom-4 bg-white mb-4 font-agothic16 w-[350px]  flex justify-center items-center py-[20px]  mt-4 box-style"
+          className="sticky  bottom-4 bg-white mb-4 font-agothic16 w-[350px]  flex justify-center items-center py-[20px]  mt-4 rounded-lg border-[2px] border-[#2D2D32]"
           style={{ fontSize: "24px" }}
         >
           메뉴 추가

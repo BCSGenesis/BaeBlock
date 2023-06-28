@@ -1,6 +1,6 @@
-import { AiOutlineRight } from "react-icons/ai";
-import { AiFillStar } from "react-icons/ai";
 import NftTitle from "../badges/nftTitle";
+import star from "../images/icon_star.png";
+import rightArrow from "../images/icon_chevron right_.png";
 
 const StoreIntro = (props) => {
   return (
@@ -13,10 +13,11 @@ const StoreIntro = (props) => {
       </div>
       <div className="flex justify-center items-center mt-2">
         {[...Array(parseInt(props.starCount))].map((_, i) => (
-          <AiFillStar key={i} size={24} color="FFD84D" />
+          // <AiFillStar key={i} size={24} color="FFD84D" />
+          <img src={star} alt="star" />
         ))}
 
-        <AiOutlineRight size={20} color="7F7F82" />
+        <img src={rightArrow} alt="rightArrow" />
       </div>
       <div className=" flex justify-center items-center gap-2 mt-4 ">
         {[...Array(parseInt(props.nftTitle.length))].map((v, i) => (

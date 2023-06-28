@@ -12,10 +12,13 @@ function App() {
         <div className="bg-white w-[390px] overflow-y-auto h-[894px] relative">
           <Routes>
             <Route path="/" element={<Main />} />
-            <Route path="/mainRider" element={<MainRider />} />
-            <Route path="/mainStore" element={<MainStore />} />
-            <Route path="/storeViewCustomer" element={<StoreViewCustomer />} />
-            <Route path="/menuStore" element={<MenuStore />} />
+            <Route path="/rider/mainRider" element={<MainRider />} />
+            <Route path="/store/mainStore" element={<MainStore />} />
+            <Route
+              path="/customer/storeViewCustomer"
+              element={<StoreViewCustomer />}
+            />
+            <Route path="/store/menuStore" element={<MenuStore />} />
           </Routes>
         </div>
       </div>

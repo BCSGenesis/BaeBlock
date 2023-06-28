@@ -1,4 +1,4 @@
-import nftShop from "../images/nftShop.png";
+import nftShop from "../images/icon_Approved Shop.png";
 
 const NftMarket = () => {
   return (

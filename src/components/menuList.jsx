@@ -1,4 +1,4 @@
-import { BsPencil } from "react-icons/bs";
+import pencil from "../images/icon_pencil_.png";
 
 const MenuList = (props) => {
   return (
@@ -22,8 +22,8 @@ const MenuList = (props) => {
       </div>
       <div className="relative bg-darkGray rounded-[10px]  w-[80px] h-[80px]">
         <img src={props.menuImage} alt="" />
-        <div className="absolute bg-deepYellow border-[2px] border-white rounded-[5px] p-[2px] bottom-[-10px] right-[-10px]">
-          <BsPencil size={20} color="black" />
+        <div className="absolute   bottom-[-10px] right-[-10px]">
+          <img src={pencil} alt="pencil" />
         </div>
       </div>
     </div>

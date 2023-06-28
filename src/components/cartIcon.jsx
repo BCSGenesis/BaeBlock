@@ -1,4 +1,4 @@
-import cart from "../images/cart.png";
+import cart from "../images/icon_cart.png";
 
 const CartIcon = (props) => {
   return (
