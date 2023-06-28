@@ -21,8 +21,4 @@
   .btn-style {
     @apply w-[276px] h-[53px] rounded-[10px] font-bold text-[20px];
   }
-
-  .box-style {
-    @apply rounded-lg border-[2px] border-[#2D2D32];
-  }
 }
