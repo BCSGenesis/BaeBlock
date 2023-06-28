@@ -27,15 +27,16 @@ function App() {
             <Route path="/customer/profile" element={<Profile />} />
             <Route path="/customer/menuEdit" element={<MenuEdit />} />
 
-            <Route path="/store/main" element={<StoreMain />} />
-            <Route path="/store/newlist" element={<StoreNewList />} />
-            <Route path="/store/mylist" element={<StoreMyList />} />
-            <Route path="/store/menu" element={<StoreMenu />} />
+            <Route path='/store' element={<StoreMain />} />
+            <Route path='/store/newlist' element={<StoreNewList />} />
+            <Route path='/store/mylist' element={<StoreMyList />} />
+            <Route path='/store/menu-edit' element={<StoreMenu />} />
             <Route path="/store/selectMenu" element={<SelectMenu />} />
 
-            <Route path="/rider/main" element={<RiderMain />} />
-            <Route path="/rider/delivery" element={<RiderDeliveryStatus />} />
-            <Route path="/rider/newlist" element={<RiderNewList />} />
+            <Route path='/rider' element={<RiderMain />} />
+            <Route path='/rider/delivery' element={<RiderDeliveryStatus />} />
+            <Route path='/rider/newlist' element={<RiderNewList />} />
+
           </Routes>
         </div>
       </div>
