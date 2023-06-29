@@ -10,6 +10,7 @@ import CartIcon from "../components/cartIcon";
 import BottomBar from "../components/bottomBar";
 import StoreIntro from "../components/storeIntro";
 import { useState } from "react";
+import RecentOrder from "../components/recentOrder";
 
 export default function StoreViewCustomer() {
   const [deliveryFee, setDeliveryFee] = useState(1000);
@@ -69,6 +70,19 @@ export default function StoreViewCustomer() {
               menuPrice={menuList[i].menuPrice}
               menuImage={menuList[i].menuImage}
               ownerRecommend={menuList[i].ownerRecommend}
+            />
+          ))}
+        </div>
+        <div
+          className="flex w-[390px] h-[140px] bg-blue-100 justify-start items-center overflow-x-scroll 
+        "
+        >
+          {menuList.map((v, i) => (
+            <RecentOrder
+              key={i}
+              storeName={menuList[i].menuName}
+              starCount="3"
+              menuName={menuList[i].menuName}
             />
           ))}
         </div>
