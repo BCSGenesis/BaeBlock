@@ -2,10 +2,14 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    screens: {
-      md: '390px',
-    },
     extend: {
+      fontFamily: {
+        sans: ['SUIT-Regular'],
+      },
+      screens: {
+        width: '390px',
+        height: '844px',
+      },
       colors: {
         mint: '#1EE7AB',
         purple: '#AA3FFF',
@@ -24,12 +28,6 @@ module.exports = {
         body: '16px',
         caption: '14px',
       },
-      fontWeight: {
-        bold: 700,
-      },
-    },
-    fontFamily: {
-      sans: ['aGD'],
     },
   },
 
