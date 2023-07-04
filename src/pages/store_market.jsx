@@ -3,8 +3,13 @@ import NftBox from "../components/Nft_box";
 const StoreMarket = () => {
   return (
     <div className="min-w-full min-h-full flex flex-col justify-center items-center ">
-      <div>만료까지 남은 기간</div>
-      <div className="mb-4 font-bold text-3xl">7일!</div>
+      <div>NFT 만료까지 남은 기간</div>
+      <div
+        className="mt-6 mb-4 font-bold text-3xl"
+        style={{ fontSize: "80px" }}
+      >
+        7일!
+      </div>
       <div className="h-16"></div>
       <NftBox
         color="bg-deepYellow"
