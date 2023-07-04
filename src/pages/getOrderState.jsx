@@ -6,10 +6,19 @@ import { useContext } from "react";
 import { AppContext } from "../App";
 
 function GetOrderState() {
-  const { orderState } = useContext(AppContext);
+  const { orderState, contract } = useContext(AppContext);
+  const onClickA = async () => {
+    try {
+      const response = await contract.methods.returnRegister().call();
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+    }
+  };
   return (
     <div className="bg-blue-300 min-h-screen min-w-full flex flex-col justify-center items-center">
       <div>orderState : {orderState}</div>
+      <button onClick={onClickA}>등록번호</button> //오류 수정중
     </div>
   );
 }

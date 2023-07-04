@@ -43,7 +43,7 @@ function App() {
 
   const getOrderState = async () => {
     try {
-      const response = await contract.methods.returnOrder(0).call();
+      const response = await contract.methods.returnOrder(orderID).call();
       if (Number(response.status) === 0) {
         setOrderState("주문 완료");
       } else if (Number(response.status) === 1) {

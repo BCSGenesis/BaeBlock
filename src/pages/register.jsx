@@ -35,7 +35,7 @@ function Register() {
           {
             from: account,
             to: c_address,
-            data: contract.methods.Register(orderID).encodeABI(),
+            data: contract.methods.Register(1).encodeABI(),
           },
         ],
       });
@@ -51,7 +51,7 @@ function Register() {
           {
             from: account,
             to: c_address,
-            data: contract.methods.Register(orderID).encodeABI(),
+            data: contract.methods.Register(2).encodeABI(),
           },
         ],
       });
