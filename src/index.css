@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'SUIT-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer components {
+  .menu-style {
+    @apply border-[1px] rounded-[10px];
+  }
+  .btn-style {
+    @apply w-[276px] h-[52px] rounded-[12px] font-bold text-[20px];
+  }
+
+  .basic-shadow {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .up-shadow {
+    box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.2);
+    /* 수평 수직 블러 확장 */
+  }
+
+  .solid-shadow {
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .category-shadow {
+    box-shadow: 0px 1px 1px 0px rgba(178, 178, 193, 0.25);
+  }
+
+  .yellow-shadow {
+    box-shadow: 0px 4px 0px 0px #ffc805;
+  }
+
+  .gray-shadow {
+    box-shadow: 0px 4px 0px 0px #b2b2c1;
+  }
+
+  .red-shadow {
+    box-shadow: 0px 2px 0px 0px #c72121;
+  }
+  .noDrag {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+}
