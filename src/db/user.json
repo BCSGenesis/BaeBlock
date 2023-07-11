@@ -237,9 +237,8 @@
           "name": "와퍼",
           "caption": "맛있는 와퍼세트",
           "detail": [
-            { "title": "기본 선택", "options": ["치즈", "양배추", "패티"] },
-            { "title": "추가 선택", "options": ["추가", "추가"] },
-            { "title": "기타 선택", "options": ["추가"] }
+            { "title": "사이즈 선택", "options": ["R", "L"] },
+            { "title": "추가 선택", "options": ["상추", "양파", "버섯"] }
           ],
           "price": 5000,
           "recommend": false,
@@ -249,9 +248,8 @@
           "name": "치즈와퍼",
           "caption": "맛있는 치즈와퍼",
           "detail": [
-            { "title": "기본 선택", "options": ["추가", "추가", "추가"] },
-            { "title": "추가 선택", "options": ["추가", "추가"] },
-            { "title": "기타 선택", "options": ["추가"] }
+            { "title": "사이즈 선택", "options": ["R", "L"] },
+            { "title": "추가 선택", "options": ["상추", "양파", "버섯"] }
           ],
           "price": 8600,
           "recommend": false,
@@ -260,17 +258,17 @@
         {
           "name": "제로콜라",
           "caption": "H662의 추천템",
-          "detail": [
-            { "title": "기본 선택", "options": ["추가", "추가", "추가"] },
-            { "title": "추가 선택", "options": ["추가", "추가"] },
-            { "title": "기타 선택", "options": ["추가"] }
-          ],
+          "detail": [{ "title": "사이즈 선택", "options": ["S", "M", "L"] }],
           "price": 1400,
           "recommend": true,
           "menuImage": "/images/zerocoke.png"
         }
       ],
-      "nft": [{ "title": "친절한 사장님" }, { "title": "우리동네 맛집" }, { "title": "빠른 조리" }],
+      "nft": [
+        { "title": "친절한 사장님" },
+        { "title": "우리동네 맛집" },
+        { "title": "빠른 조리" }
+      ],
       "deliveryFee": 990,
       "isOpen": false
     },
