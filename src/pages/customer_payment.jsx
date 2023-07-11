@@ -95,9 +95,10 @@ export const CustomerPayment = () => {
               <div className="font-bold text-headline">주문을 완료할까요?</div>
               <div className="text-caption">맛있고 빠르게 배달해드릴게요!</div>
             </div>
-            <div className="flex justify-center gap-4">
+
+            <div className="flex justify-center gap-8">
               <button
-                className="bg-lightGray w-20 p-2 rounded-xl font-bold border-[1.5px] border-black"
+                className="bg-lightGray p-2 rounded-xl font-bold border-[1.5px] border-black"
                 onClick={onClickPay}
               >
                 아직...
