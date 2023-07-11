@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { PaymentMenu } from "../components/Payment_menu";
 import { useContext, useState, useEffect } from "react";
 import { AppContext } from "../App";
@@ -19,7 +19,6 @@ export const CustomerPayment = () => {
     exchangeRate,
     getExchangeRate,
     Acustomer,
-    setACustomer,
   } = useContext(AppContext);
 
   const getTotalFoodCost = () => {
