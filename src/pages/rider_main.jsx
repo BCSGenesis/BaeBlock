@@ -10,7 +10,7 @@ import user from '../db/user.json';
 
 export default function RiderMain() {
   const [deliveryCount, setDeliveryCount] = useState(7); //로그인에서 프롭스로 내려야할것같음
-  const [isWork, setIsWork] = useState(false);
+  const [isWork, setIsWork] = useState(true);
 
   const toggleWorkBtn = () => {
     setIsWork(!isWork);

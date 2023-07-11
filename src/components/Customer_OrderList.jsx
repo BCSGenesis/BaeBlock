@@ -57,55 +57,42 @@ const CustomerOrderList = (props) => {
     }
   };
   return (
-    <div
-      className={`flex items-center justify-center ${props.color} w-[360px] rounded-lg border-[1.5px] border-black basic-shadow`}
-    >
-      <div className="min-w-full flex justify-between items-center tracking-tighter px-4">
-        <div className="flex flex-col justify-between items-start">
-          <div className="flex gap-2 justify-center items-center">
-            <div className="mt-1 font-bold" style={{ fontSize: "20px" }}>
-              {props.storeName}
-            </div>
-          </div>
-          <div>
-            <div className="text-body font-bold mt-1 pb-1">
-              주문한 음식
-              <div className="mt-1 ml-1 text-body font-thin">
-                {order[0].orderMenu.map((v) => (
-                  <div className="flex justify-between">
-                    ▪ {v.foodname} <div>{v.quantity} 개</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="flex justify-between text-body font-bold mb-2">
-              <div>총 결제금액</div>
-              <div className="ml-2">
-                {(
-                  props.deliveryTip +
-                  props.foodPrice +
-                  props.deliveryFee
-                ).toLocaleString()}
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          {state === "배달 완료" ? (
-            <button
-              onClick={onClickRiderCompleteAndPay}
-              className="text-white bg-purple
-            px-4
-            py-2
+    <div className="flex flex-col px-4 py-2 w-[360px] rounded-lg border-[1.5px] border-black solid-shadow">
+      <div className="flex justify-between items-center">
+        <div className="font-bold text-subtitle">{props.storeName}</div>
+        {state === "배달 완료" ? (
+          <button
+            onClick={onClickRiderCompleteAndPay}
+            className="text-white bg-purple
+            px-2
+            py-1
             rounded-xl"
-            >
-              {state}
-            </button>
-          ) : (
-            <button className="text-purple font-bold  px-4 py-2 rounded-xl">
-              {state}
-            </button>
-          )}
+          >
+            {state}
+          </button>
+        ) : (
+          <div className="text-purple font-bold rounded-xl">{state}</div>
+        )}
+      </div>
+      <div className="text-body font-bold mt-2">
+        주문한 음식
+        <div className="text-body font-thin">
+          {order[0].orderMenu.map((v) => (
+            <div className="flex justify-between">
+              ▪ {v.foodname} <div>{v.quantity} 개</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="mt-2 flex justify-between text-body font-bold">
+        <div>총 결제금액</div>
+        <div className="ml-2">
+          {(
+            props.deliveryTip +
+            props.foodPrice +
+            props.deliveryFee
+          ).toLocaleString()}{" "}
+          원
         </div>
       </div>
     </div>

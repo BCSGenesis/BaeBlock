@@ -10,7 +10,7 @@ import WorkBadgeBTN from '../components/Work_Btn';
 
 export default function RiderMain() {
   const [monthProfit, setMonthProfit] = useState('100,000,000'); //로그인에서 프롭스로 내려야할것같음
-  const [isWork, setIsWork] = useState(false);
+  const [isWork, setIsWork] = useState(true);
   const { Astore } = useContext(AppContext);
 
   const toggleWorkBtn = () => {
