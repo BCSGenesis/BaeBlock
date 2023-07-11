@@ -135,6 +135,7 @@ function App() {
           <AppContext.Provider
             value={{
               web3,
+              setAccount,
               account,
               orderContract,
               riderNftContract,
