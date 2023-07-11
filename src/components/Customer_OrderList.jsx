@@ -8,7 +8,7 @@ const CustomerOrderList = (props) => {
 
   const getOrderState = async () => {
     try {
-      const response = await orderContract.methods.returnOrderState(0).call();
+      const response = await orderContract.methods.returnOrderState(2).call();
       if (Number(response) === 0) {
         setState("주문 완료");
       } else if (Number(response) === 1) {
