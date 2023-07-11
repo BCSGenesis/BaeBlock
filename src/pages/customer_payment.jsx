@@ -55,7 +55,7 @@ export const CustomerPayment = () => {
             to: order_c_address,
             data: orderContract.methods
               .ordering(
-                "0x74913Ee32a84941A71774439E0A3b581beF378cA" /*스토어 wallet*/,
+                "0xc0fcAAAF52B315c88cB681868Fbe2AEC975ACF73 " /*스토어 wallet*/,
                 ((totalFoodCost / exchangeRate) * 10 ** 15).toFixed(0),
                 ((Acustomer.deliveryFee / exchangeRate) * 10 ** 15).toFixed(0),
                 ((Acustomer.deliveryTip / exchangeRate) * 10 ** 15).toFixed(0)
@@ -141,7 +141,8 @@ export const CustomerPayment = () => {
         <div className="font-bold text-subtitle">배달팁</div>
         <div className="flex items-center mt-4">
           <input
-            type="text"
+            placeholder="0"
+            type="number"
             className="w-28 text-body font-bold text-black border-b-[1.5px] border-darkGray focus: outline-none focus:border-b-[1.5px] focus:border-deepYellow"
             onChange={(e) => setTip(e.target.value)}
           />
