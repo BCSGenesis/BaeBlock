@@ -51,6 +51,7 @@ function App() {
   const [Astore, setAStore] = useState(user.store[0]);
   const [Acustomer, setACustomer] = useState(user.customer[0].orderList);
   const [cartCount, setCartCount] = useState(0);
+  const [orderID, setOrderID] = useState(0);
 
   const onClickAccount = async () => {
     try {
@@ -59,16 +60,19 @@ function App() {
       });
 
       setAccount(accounts[0]);
+      const response = await orderContract.methods.returnOrderID().call();
+      setTimeout(setOrderID(Number(response)), 1000);
     } catch (error) {
       console.error(error);
 
       alert("계정 정보를 불러오는데 실패하였습니다.");
     }
   };
+
   var web3 = new Web3(process.env.REACT_APP_API);
-  var order_c_address = "0x2f07e5C92a178FA075A82bB0528f6Fa15baeC3db";
-  var rider_c_address = "0x0670f30A00e3077f51F9010629A4A9f013e3D002";
-  var store_c_address = "0xdf11efD4D5801d1300C70a095405b58866c5d0b5";
+  var order_c_address = "0xeEca7EffeE34B9a68A5284af9C539d396f7cc591";
+  var rider_c_address = "0xA7495F384bA8EA72C5E8680052717f283BC9617c";
+  var store_c_address = "0xF14adAC4912Cf2A620D3D40373C285dBb4cb7c10";
   var order_c_abi = ORDER_C_ABI;
   var rider_c_abi = RIDER_C_ABI;
   var store_c_abi = STORE_C_ABI;
@@ -130,6 +134,7 @@ function App() {
           className="bg-white border-2 rounded-2xl border-black w-screen h-screen max-w-screen-width max-h-[844px] mx-auto overflow-y-auto text-black scrollbar-hide"
           ref={scrollRef}
         >
+          <div>{orderID}</div>
           <Header />
 
           <AppContext.Provider
@@ -150,6 +155,8 @@ function App() {
               setACustomer,
               cartCount,
               setCartCount,
+              orderID,
+              setOrderID,
             }}
           >
             <BtnNav

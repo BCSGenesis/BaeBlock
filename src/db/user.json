@@ -86,7 +86,7 @@
     },
     {
       "nickname": "혀엉",
-      "wallet": "0xFF9898dd0fBE1DaE30018bdEAa09629ae5B936bd",
+      "wallet": "0x1164c108719048D8CECE6C1FE9e8a2e345b38b10",
       "cus_address": "서울 성동구 둘레15길 7",
       "orderList": {
         "id": 3,
@@ -270,7 +270,11 @@
           "menuImage": "/images/zerocoke.png"
         }
       ],
-      "nft": [{ "title": "친절한 사장님" }, { "title": "우리동네 맛집" }, { "title": "빠른 조리" }],
+      "nft": [
+        { "title": "친절한 사장님" },
+        { "title": "우리동네 맛집" },
+        { "title": "빠른 조리" }
+      ],
       "deliveryFee": 990,
       "isOpen": false
     },

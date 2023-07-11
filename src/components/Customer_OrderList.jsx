@@ -3,12 +3,15 @@ import { AppContext } from "../App";
 import order from "../db/order.json";
 
 const CustomerOrderList = (props) => {
-  const { account, orderContract, order_c_address } = useContext(AppContext);
+  const { account, orderContract, order_c_address, orderID } =
+    useContext(AppContext);
   const [state, setState] = useState("");
 
   const getOrderState = async () => {
     try {
-      const response = await orderContract.methods.returnOrderState(0).call();
+      const response = await orderContract.methods
+        .returnOrderState(orderID)
+        .call();
       if (Number(response) === 0) {
         setState("주문 완료");
       } else if (Number(response) === 1) {
@@ -26,7 +29,6 @@ const CustomerOrderList = (props) => {
       } else {
         setState("완료");
       }
-      console.log(response);
     } catch (error) {
       console.error(error);
     }
@@ -89,7 +91,7 @@ const CustomerOrderList = (props) => {
           </div>
         </div>
         <div>
-          {state == 6 ? (
+          {state == "배달 완료" ? (
             <button
               onClick={onClickRiderCompleteAndPay}
               className="text-white bg-purple
