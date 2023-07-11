@@ -38,7 +38,7 @@ export const CustomerPayment = () => {
     var a = web3.utils.numberToHex(
       (
         ((totalFoodCost + Acustomer.deliveryTip + Acustomer.deliveryFee) *
-          10 ** 14) /
+          10 ** 15) /
         exchangeRate
       ).toFixed(0)
     );
@@ -51,10 +51,10 @@ export const CustomerPayment = () => {
             to: order_c_address,
             data: orderContract.methods
               .ordering(
-                "0x672BB79Dc88a32a1c86554d7D86d47F8AEf47514" /*스토어 wallet*/,
-                ((totalFoodCost / exchangeRate) * 10 ** 14).toFixed(0),
-                ((Acustomer.deliveryFee / exchangeRate) * 10 ** 14).toFixed(0),
-                ((Acustomer.deliveryTip / exchangeRate) * 10 ** 14).toFixed(0)
+                "0xc0fcAAAF52B315c88cB681868Fbe2AEC975ACF73" /*스토어 wallet*/,
+                ((totalFoodCost / exchangeRate) * 10 ** 15).toFixed(0),
+                ((Acustomer.deliveryFee / exchangeRate) * 10 ** 15).toFixed(0),
+                ((Acustomer.deliveryTip / exchangeRate) * 10 ** 15).toFixed(0)
               )
               .encodeABI(),
             gas: "100000",
@@ -91,9 +91,10 @@ export const CustomerPayment = () => {
               <div className="font-bold text-headline">주문을 완료할까요?</div>
               <div className="text-caption">맛있고 빠르게 배달해드릴게요!</div>
             </div>
-            <div className="flex justify-center gap-4">
+
+            <div className="flex justify-center gap-8">
               <button
-                className="bg-lightGray w-20 p-2 rounded-xl font-bold border-[1.5px] border-black"
+                className="bg-lightGray p-2 rounded-xl font-bold border-[1.5px] border-black"
                 onClick={onClickPay}
               >
                 아직...
@@ -137,7 +138,8 @@ export const CustomerPayment = () => {
         <div className="font-bold text-subtitle">배달팁</div>
         <div className="flex items-center mt-4">
           <input
-            type="text"
+            placeholder="0"
+            type="number"
             className="w-28 text-body font-bold text-black border-b-[1.5px] border-darkGray focus: outline-none focus:border-b-[1.5px] focus:border-deepYellow"
             onChange={(e) => setTip(e.target.value)}
           />

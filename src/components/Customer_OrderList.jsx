@@ -91,7 +91,7 @@ const CustomerOrderList = (props) => {
           </div>
         </div>
         <div>
-          {state == "배달 완료" ? (
+          {state === "배달 완료" ? (
             <button
               onClick={onClickRiderCompleteAndPay}
               className="text-white bg-purple

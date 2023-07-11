@@ -70,9 +70,9 @@ function App() {
   };
 
   var web3 = new Web3(process.env.REACT_APP_API);
-  var order_c_address = "0xeEca7EffeE34B9a68A5284af9C539d396f7cc591";
-  var rider_c_address = "0xA7495F384bA8EA72C5E8680052717f283BC9617c";
-  var store_c_address = "0xF14adAC4912Cf2A620D3D40373C285dBb4cb7c10";
+  var order_c_address = "0x958d48Be6F84cCAC1ab4527cC4eCA2a9eF070634";
+  var rider_c_address = "0x615132d30cD5064Fc6AB18858124f23BAD593fc8";
+  var store_c_address = "0xD68c39C88e148d09540bb7bCb5E43487F236924c";
   var order_c_abi = ORDER_C_ABI;
   var rider_c_abi = RIDER_C_ABI;
   var store_c_abi = STORE_C_ABI;
@@ -139,6 +139,7 @@ function App() {
           <AppContext.Provider
             value={{
               web3,
+              setAccount,
               account,
               orderContract,
               riderNftContract,

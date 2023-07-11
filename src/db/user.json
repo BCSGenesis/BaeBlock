@@ -51,7 +51,7 @@
         ],
         "cus_address": "서울 강남구 선릉로93길 22",
         "deliveryFee": 990,
-        "deliveryTip": 0,
+        "deliveryTip":200,
         "distance": 1
       },
       "BBCoin": 15000
@@ -237,9 +237,8 @@
           "name": "와퍼",
           "caption": "맛있는 와퍼세트",
           "detail": [
-            { "title": "기본 선택", "options": ["치즈", "양배추", "패티"] },
-            { "title": "추가 선택", "options": ["추가", "추가"] },
-            { "title": "기타 선택", "options": ["추가"] }
+            { "title": "사이즈 선택", "options": ["R", "L"] },
+            { "title": "추가 선택", "options": ["상추", "양파", "버섯"] }
           ],
           "price": 5000,
           "recommend": false,
@@ -249,9 +248,8 @@
           "name": "치즈와퍼",
           "caption": "맛있는 치즈와퍼",
           "detail": [
-            { "title": "기본 선택", "options": ["추가", "추가", "추가"] },
-            { "title": "추가 선택", "options": ["추가", "추가"] },
-            { "title": "기타 선택", "options": ["추가"] }
+            { "title": "사이즈 선택", "options": ["R", "L"] },
+            { "title": "추가 선택", "options": ["상추", "양파", "버섯"] }
           ],
           "price": 8600,
           "recommend": false,
@@ -260,11 +258,7 @@
         {
           "name": "제로콜라",
           "caption": "H662의 추천템",
-          "detail": [
-            { "title": "기본 선택", "options": ["추가", "추가", "추가"] },
-            { "title": "추가 선택", "options": ["추가", "추가"] },
-            { "title": "기타 선택", "options": ["추가"] }
-          ],
+          "detail": [{ "title": "사이즈 선택", "options": ["S", "M", "L"] }],
           "price": 1400,
           "recommend": true,
           "menuImage": "/images/zerocoke.png"
