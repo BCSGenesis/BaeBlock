@@ -134,7 +134,6 @@ function App() {
           className="bg-white border-2 rounded-2xl border-black w-screen h-screen max-w-screen-width max-h-[844px] mx-auto overflow-y-auto text-black scrollbar-hide"
           ref={scrollRef}
         >
-          <div>{orderID}</div>
           <Header />
 
           <AppContext.Provider
