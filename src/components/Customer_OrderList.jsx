@@ -44,7 +44,7 @@ const CustomerOrderList = (props) => {
             from: account,
             to: order_c_address,
             data: orderContract.methods
-              .orderComplete(0, true)
+              .orderComplete(2, true)
               .encodeABI() /* 주문번호,true*/,
             gas: "100000",
           },

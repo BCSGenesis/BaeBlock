@@ -54,7 +54,7 @@ export const RiderNewList = () => {
           {
             from: account,
             to: order_c_address,
-            data: orderContract.methods.startDelivery(0).encodeABI(),
+            data: orderContract.methods.startDelivery(2).encodeABI(),
             gas: "300000",
           },
         ],

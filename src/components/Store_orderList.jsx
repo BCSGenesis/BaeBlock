@@ -15,7 +15,7 @@ export const StoreOrderList = () => {
   const onClickConfirm = async (i, type) => {
     setToggle({ index: null, type: null });
     if (type === "accept") {
-      var order = await orderContract.methods.returnOrder(0).call();
+      var order = await orderContract.methods.returnOrder(2).call();
       var a = web3.utils.numberToHex(
         Number(order.deliveryFee)
       ); /*해당 주문번호의 배달비*/
@@ -27,7 +27,7 @@ export const StoreOrderList = () => {
               from: account,
               to: order_c_address,
               data: orderContract.methods
-                .storeAccept_Decline(0, true) /*주문번호,수락or거절*/
+                .storeAccept_Decline(2, true) /*주문번호,수락or거절*/
                 .encodeABI(),
               gas: "100000",
               value: a,
