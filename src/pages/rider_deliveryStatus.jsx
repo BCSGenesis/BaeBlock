@@ -29,7 +29,7 @@ export const RiderDeliveryStatus = () => {
             from: account,
             to: order_c_address,
             data: orderContract.methods
-              .doneDelivery(2)
+              .doneDelivery(0)
               .encodeABI() /*주문번호*/,
             gas: "300000",
           },

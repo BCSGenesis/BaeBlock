@@ -44,7 +44,7 @@ const CustomerOrderList = (props) => {
             from: account,
             to: order_c_address,
             data: orderContract.methods
-              .orderComplete(2, true)
+              .orderComplete(0, true)
               .encodeABI() /* 주문번호,true*/,
             gas: "100000",
           },
@@ -89,7 +89,7 @@ const CustomerOrderList = (props) => {
           </div>
         </div>
         <div>
-          {state == 6 ? (
+          {state === "배달 완료" ? (
             <button
               onClick={onClickRiderCompleteAndPay}
               className="text-white bg-purple

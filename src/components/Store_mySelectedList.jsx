@@ -18,7 +18,7 @@ export const StoreMySelectedList = () => {
         {
           from: account,
           to: order_c_address,
-          data: orderContract.methods.cookFinish(2).encodeABI() /*주문번호*/,
+          data: orderContract.methods.cookFinish(i).encodeABI() /*주문번호*/,
           gas: "100000",
         },
       ],
