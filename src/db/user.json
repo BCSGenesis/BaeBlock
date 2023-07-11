@@ -1,8 +1,8 @@
 {
   "customer": [
     {
-      "nickname": "서쿵",
-      "wallet": "0x3b0A2c32055d72803f12BCa33bb53B3AAC4bEcdB",
+      "nickname": "제네시스",
+      "wallet": "0x21E846301111435C2421eCbb0d92999Bb94E5ad9",
       "cus_address": "서울 강남구 선릉로93길 22",
       "orderList": {
         "id": 0,
@@ -51,7 +51,7 @@
         ],
         "cus_address": "서울 강남구 선릉로93길 22",
         "deliveryFee": 990,
-        "deliveryTip":200,
+        "deliveryTip": 200,
         "distance": 1
       },
       "BBCoin": 15000
@@ -230,7 +230,7 @@
     {
       "id": 0,
       "storeName": "버거킹",
-      "wallet": "0x74913Ee32a84941A71774439E0A3b581beF378cA",
+      "wallet": "0xc0fcAAAF52B315c88cB681868Fbe2AEC975ACF73",
       "sto_address": "서울 강남구 선릉로 429",
       "menu": [
         {
@@ -264,11 +264,7 @@
           "menuImage": "/images/zerocoke.png"
         }
       ],
-      "nft": [
-        { "title": "친절한 사장님" },
-        { "title": "우리동네 맛집" },
-        { "title": "빠른 조리" }
-      ],
+      "nft": [{ "title": "친절한 사장님" }, { "title": "우리동네 맛집" }, { "title": "빠른 조리" }],
       "deliveryFee": 990,
       "isOpen": false
     },
@@ -476,8 +472,8 @@
 
   "rider": [
     {
-      "wallet": "0x8ECa6FB529FBF7104F8fd3A3631ABe7d16a7717F",
-      "nickName": "라이더석훈",
+      "wallet": "0x98f15CeDA933C71252060A1F3ab818DF2a1B43DD",
+      "nickName": "달리는제네시스",
       "deliveryArea": "서울 성동구",
       "deliveryBy": "오토바이",
       "nft": [{ "title": "빠른 배달" }, { "title": "깔끔한 배달" }],

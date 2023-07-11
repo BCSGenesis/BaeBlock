@@ -11,14 +11,18 @@ const BottomBar = () => {
       <Link to='/customer/main'>
         <img className='w-12' src={shop} alt='shop' />
       </Link>
-      <img className='w-12' src={list} alt='list' />
+
+      <Link to='/customer/mypage'>
+        <img className='w-12' src={list} alt='list' />
+      </Link>
+
       <Link to='/customer/ordercomplete'>
         <img className='w-12' src={rocket} alt='rocket' />
       </Link>
+
       <img className='w-12' src={like} alt='like' />
-      {/* <Link to="/customer/mypage"> */}
+
       <img className='w-12' src={user} alt='user' />
-      {/* </Link> */}
     </div>
   );
 };

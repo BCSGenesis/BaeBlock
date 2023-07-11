@@ -31,7 +31,6 @@ const CustomerMypage = () => {
           v.wallet.toLowerCase() === account.toLowerCase() ? (
             <CustomerOrderList
               key={i}
-              color='bg-white'
               storeName={v.orderList.storeName}
               foodPrice={calculateTotalCost(i)}
               deliveryFee={v.orderList.deliveryFee}
