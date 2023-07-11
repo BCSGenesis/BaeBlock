@@ -95,13 +95,13 @@ export const RiderNewList = () => {
       </div>
 
       {startDelivery && selectDelivery >= 1 ? (
-        <div className='flex justify-center items-center'>
+        <div className='flex justify-center items-center z-30'>
           <div className='flex flex-col justify-between absolute w-72 h-44 py-4 mt-[650px] bg-white border-2 border-black solid-shadow px-4 rounded-2xl text-black'>
             <div className='flex flex-col gap-2 justify-center items-center'>
               <div className='font-bold text-headline'>배달을 시작하세요!</div>
               <div className='text-caption'>배달을 시작하세요!!</div>
             </div>
-            <div className='flex justify-center gap-4'>
+            <div className='flex justify-center gap-8'>
               <button
                 className='bg-lightGray p-2 rounded-xl font-bold border-[1.5px] border-black'
                 onClick={onClickPopUp}>
@@ -120,7 +120,7 @@ export const RiderNewList = () => {
       ) : null}
 
       {startDelivery && selectDelivery < 1 && (
-        <div className='flex justify-center items-center'>
+        <div className='flex justify-center items-center z-30'>
           <div className='flex flex-col justify-around items-center absolute w-72 h-44 py-4 mt-[650px] bg-white border-2 border-black solid-shadow px-4 rounded-2xl text-black'>
             <div className='font-bold text-headline text-center'>선택된 주문이 없어요!</div>
             <button
