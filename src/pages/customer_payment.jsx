@@ -55,7 +55,7 @@ export const CustomerPayment = () => {
             to: order_c_address,
             data: orderContract.methods
               .ordering(
-                "0xc0fcAAAF52B315c88cB681868Fbe2AEC975ACF73 " /*스토어 wallet*/,
+                "0xc0fcAAAF52B315c88cB681868Fbe2AEC975ACF73" /*스토어 wallet*/,
                 ((totalFoodCost / exchangeRate) * 10 ** 15).toFixed(0),
                 ((Acustomer.deliveryFee / exchangeRate) * 10 ** 15).toFixed(0),
                 ((Acustomer.deliveryTip / exchangeRate) * 10 ** 15).toFixed(0)
