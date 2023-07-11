@@ -66,9 +66,9 @@ function App() {
     }
   };
   var web3 = new Web3(process.env.REACT_APP_API);
-  var order_c_address = "0x2f07e5C92a178FA075A82bB0528f6Fa15baeC3db";
-  var rider_c_address = "0x0670f30A00e3077f51F9010629A4A9f013e3D002";
-  var store_c_address = "0xdf11efD4D5801d1300C70a095405b58866c5d0b5";
+  var order_c_address = "0x958d48Be6F84cCAC1ab4527cC4eCA2a9eF070634";
+  var rider_c_address = "0x615132d30cD5064Fc6AB18858124f23BAD593fc8";
+  var store_c_address = "0xD68c39C88e148d09540bb7bCb5E43487F236924c";
   var order_c_abi = ORDER_C_ABI;
   var rider_c_abi = RIDER_C_ABI;
   var store_c_abi = STORE_C_ABI;
