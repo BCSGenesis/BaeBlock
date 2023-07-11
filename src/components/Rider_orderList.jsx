@@ -16,7 +16,7 @@ export const RiderOrderList = ({ orders, setSelectDelivery, activeBtn }) => {
           {
             from: account,
             to: order_c_address,
-            data: orderContract.methods.setDelivery(1).encodeABI(),
+            data: orderContract.methods.setDelivery(0).encodeABI(),
             gas: "300000",
           },
         ],
