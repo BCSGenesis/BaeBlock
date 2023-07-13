@@ -51,6 +51,7 @@ function App() {
   const [Astore, setAStore] = useState(user.store[0]);
   const [Acustomer, setACustomer] = useState(user.customer[0].orderList);
   const [cartCount, setCartCount] = useState(0);
+  const [orderID, setOrderID] = useState(0);
 
   const onClickAccount = async () => {
     try {
@@ -59,12 +60,15 @@ function App() {
       });
 
       setAccount(accounts[0]);
+      const response = await orderContract.methods.returnOrderID().call();
+      setTimeout(setOrderID(Number(response)), 1000);
     } catch (error) {
       console.error(error);
 
       alert("계정 정보를 불러오는데 실패하였습니다.");
     }
   };
+
   var web3 = new Web3(process.env.REACT_APP_API);
   var order_c_address = "0x958d48Be6F84cCAC1ab4527cC4eCA2a9eF070634";
   var rider_c_address = "0x615132d30cD5064Fc6AB18858124f23BAD593fc8";
@@ -151,6 +155,8 @@ function App() {
               setACustomer,
               cartCount,
               setCartCount,
+              orderID,
+              setOrderID,
             }}
           >
             <BtnNav

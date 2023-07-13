@@ -17,7 +17,8 @@ export const RiderDeliveryStatus = () => {
   const [remainingOrders, setRemainingOrders] = useState(
     user.rider[0].orderList.length
   );
-  const { account, orderContract, order_c_address } = useContext(AppContext);
+  const { account, orderContract, order_c_address, orderID } =
+    useContext(AppContext);
 
   const onClickFinish = async (i) => {
     setToggle({ index: null });
@@ -29,7 +30,7 @@ export const RiderDeliveryStatus = () => {
             from: account,
             to: order_c_address,
             data: orderContract.methods
-              .doneDelivery(0)
+              .doneDelivery(orderID)
               .encodeABI() /*주문번호*/,
             gas: "300000",
           },

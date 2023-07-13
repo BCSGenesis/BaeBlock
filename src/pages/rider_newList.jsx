@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import { AppContext } from "../App";
 
 export const RiderNewList = () => {
-  const { account, orderContract, order_c_address } = useContext(AppContext);
+  const { account, orderContract, order_c_address, orderID } =
+    useContext(AppContext);
   const [startDelivery, setStartDelivery] = useState(false);
   const [orders, setOrders] = useState([]);
   const [activeBtn, setActiveBtn] = useState();
@@ -54,7 +55,7 @@ export const RiderNewList = () => {
           {
             from: account,
             to: order_c_address,
-            data: orderContract.methods.startDelivery(0).encodeABI(),
+            data: orderContract.methods.startDelivery(orderID).encodeABI(),
             gas: "300000",
           },
         ],
@@ -130,7 +131,6 @@ export const RiderNewList = () => {
             <div className="font-bold text-headline text-center">
               선택된 주문이 없어요!
             </div>
-
             <button
               className="bg-lightYellow w-20 p-2 rounded-xl font-bold border-[1.5px] border-black mt-4"
               onClick={onClickPopUp}

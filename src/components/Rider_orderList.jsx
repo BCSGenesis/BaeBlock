@@ -3,7 +3,8 @@ import FlipMove from "react-flip-move";
 import { AppContext } from "../App";
 
 export const RiderOrderList = ({ orders, setSelectDelivery, activeBtn }) => {
-  const { account, orderContract, order_c_address } = useContext(AppContext);
+  const { account, orderContract, order_c_address, orderID } =
+    useContext(AppContext);
   const [selected, setSelected] = useState({});
   const [toggle, setToggle] = useState({ index: null });
 
@@ -16,7 +17,7 @@ export const RiderOrderList = ({ orders, setSelectDelivery, activeBtn }) => {
           {
             from: account,
             to: order_c_address,
-            data: orderContract.methods.setDelivery(0).encodeABI(),
+            data: orderContract.methods.setDelivery(orderID).encodeABI(),
             gas: "300000",
           },
         ],

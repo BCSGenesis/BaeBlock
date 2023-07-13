@@ -6,7 +6,8 @@ import { AppContext } from "../App";
 export const StoreMySelectedList = () => {
   const [finished, setFinished] = useState({});
   const [toggle, setToggle] = useState({ index: null });
-  const { account, orderContract, order_c_address } = useContext(AppContext);
+  const { account, orderContract, order_c_address, orderID } =
+    useContext(AppContext);
   const [showToast, setShowToast] = useState(false);
   const [toastMessage, setToastMessage] = useState("");
 
@@ -18,7 +19,9 @@ export const StoreMySelectedList = () => {
         {
           from: account,
           to: order_c_address,
-          data: orderContract.methods.cookFinish(i).encodeABI() /*주문번호*/,
+          data: orderContract.methods
+            .cookFinish(orderID)
+            .encodeABI() /*주문번호*/,
           gas: "100000",
         },
       ],

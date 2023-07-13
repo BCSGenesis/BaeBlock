@@ -16,19 +16,6 @@ function CustomerOrderComplete() {
     return totalCost;
   };
 
-  const [state, setState] = useState(0); //이 state쓰시면 진행상태 숫자로 받아와서 라이더처럼 보여줄 수 있습니다.
-  const getOrderState = async () => {
-    try {
-      const response = await orderContract.methods.returnOrderState(0).call();
-      setState(state.push(Number(response)));
-    } catch (error) {
-      console.error(error);
-    }
-  };
-  useEffect(() => {
-    getOrderState();
-  });
-
   return (
     <div>
       <div className="flex flex-col items-center">
