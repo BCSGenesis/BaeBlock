@@ -2,7 +2,7 @@
   "customer": [
     {
       "nickname": "제네시스",
-      "wallet": "0x21E846301111435C2421eCbb0d92999Bb94E5ad9",
+      "wallet": "0x3b0A2c32055d72803f12BCa33bb53B3AAC4bEcdB",
       "cus_address": "서울 강남구 선릉로93길 22",
       "orderList": {
         "id": 0,
@@ -381,7 +381,7 @@
     {
       "id": 3,
       "storeName": "소담 칼국수",
-      "wallet": "0x672BB79Dc88a32a1c86554d7D86d47F8AEf47514",
+      "wallet": "0x74913Ee32a84941A71774439E0A3b581beF378cA",
       "sto_address": "서울 성동구 성덕정길 131-8",
       "menu": [
         {
@@ -476,7 +476,7 @@
 
   "rider": [
     {
-      "wallet": "0x98f15CeDA933C71252060A1F3ab818DF2a1B43DD",
+      "wallet": "0x8ECa6FB529FBF7104F8fd3A3631ABe7d16a7717F",
       "nickName": "달리는제네시스",
       "deliveryArea": "서울 성동구",
       "deliveryBy": "오토바이",
