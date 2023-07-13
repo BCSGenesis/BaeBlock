@@ -70,9 +70,9 @@ function App() {
   };
 
   var web3 = new Web3(process.env.REACT_APP_API);
-  var order_c_address = "0x958d48Be6F84cCAC1ab4527cC4eCA2a9eF070634";
-  var rider_c_address = "0x615132d30cD5064Fc6AB18858124f23BAD593fc8";
-  var store_c_address = "0xD68c39C88e148d09540bb7bCb5E43487F236924c";
+  var order_c_address = "0x45160732c419D7cb9a7Dfc06AcAfcec38857469c";
+  var rider_c_address = "0xd69b0fcbF85BDA6C7F43e14da636E03F4b02D3e9";
+  var store_c_address = "0x727099C7cf9f40d3897427Cad0f1651021390f4A";
   var order_c_abi = ORDER_C_ABI;
   var rider_c_abi = RIDER_C_ABI;
   var store_c_abi = STORE_C_ABI;
